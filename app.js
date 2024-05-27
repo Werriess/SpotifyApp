@@ -2,7 +2,6 @@
 //Traver Mhere (576809)
 //James Pretorius (577814)
 
-require("dotenv").config();
 let prompt = require("prompt-sync")();
 let { mainMenu, loading } = require("./mainMenu.js");
 let getSong = require("./songs.js");
