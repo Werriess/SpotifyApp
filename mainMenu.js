@@ -1,22 +1,21 @@
 function mainMenu() {
-    console.log(`
-  
-     ____  ____  ____  _____  _  ________  _        
-    / ___\\/  __\\/  _ \\/__ __\\/ \\/    /\\  \\//        
-    |    \\|  \\/|| / \\|  / \\  | ||  __\\ \\  /         
-    \\___ ||  __/| \\_/|  | |  | || |    / /          
-    \\____/\\_/   \\____/  \\_/  \\_/\\_/   /_/  
-  
-  ---------------------------Welcome to my Spotify App-----------------------------------
-  
-  Press 1 to Search for a song
-  Press 2 to Exit
-  `);
-  }
+  console.log(`
 
+ ____  ____  ____  _____  _  ________  _        
+/ ___\\/  __\\/  _ \\/__ __\\/ \\/    /\\  \\//        
+|    \\|  \\/|| / \\|  / \\  | ||  __\\ \\  /         
+\\___ ||  __/| \\_/|  | |  | || |    / /          
+\\____/\\_/   \\____/  \\_/  \\_/\\_/   /_/  
+
+---------------------------Welcome to my Spotify App-----------------------------------
+
+Press 1 to Search for a song
+Press 2 to Exit
+`);
+}
 
 function loading() {
- return new Promise((resolve) => {
+  return new Promise((resolve) => {
     let count = 0;
     let loadingAnimation = setInterval(() => {
       process.stdout.write("#");
@@ -29,4 +28,4 @@ function loading() {
   });
 }
 
-module.exports = {mainMenu, loading}
+module.exports = { mainMenu, loading };

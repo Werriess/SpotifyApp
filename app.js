@@ -1,8 +1,7 @@
 require("dotenv").config();
 let prompt = require("prompt-sync")();
-let {mainMenu, loading} = require("./mainMenu.js");
-let getSong = require("./songs.js")
-
+let { mainMenu, loading } = require("./mainMenu.js");
+let getSong = require("./songs.js");
 
 async function main() {
   mainMenu();
@@ -15,8 +14,7 @@ async function main() {
         try {
           console.clear();
           await getSong();
-        } 
-        catch (err) {
+        } catch (err) {
           console.log(err.message);
         }
         break;
@@ -27,7 +25,9 @@ async function main() {
         break;
       default:
         console.clear();
-        console.log("Invalid choice. Press 1 to search for a song or 2 to exit.");
+        console.log(
+          "Invalid choice. Press 1 to search for a song or 2 to exit."
+        );
         break;
     }
   }
